@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light background color */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333; /* Heading color */
+}
+
+p {
+    margin-bottom: 20px;
+    color: #555; /* Text color */
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between options */
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: white; /* Background for options */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.option i {
+    font-size: 2rem; /* Icon size */
+    color: #8a6cff; /* Icon color */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.option.selected {
+    border-color: #8a6cff; /* Border color when selected */
+    background-color: #e8e8ff; /* Background color when selected */
+}
+
+.next-btn {
+    margin-top: 30px;
+    background-color: #8a6cff; /* Button background color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-btn:hover {
+    background-color: #7a5fcc; /* Darker shade on hover */
+}

@@ -1,0 +1,38 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Background color */
+    opacity: 0; /* Start hidden for animation */
+    background-image: url(images/cam1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn 3s forwards; /* Fade in animation */
+}
+
+.logo img {
+    width: 200px; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space between logo and text */
+}
+
+h1 {
+    font-size: 2.5rem; /* Heading size */
+    color: white; /* Heading color */
+    font-family: sans-serif;
+    background-color: green;
+    padding: 10px;
+    text-align: center; /* Centered text */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        opacity: 1; /* End fully visible */
+    }
+}

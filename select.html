@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Brings You to PicsHub?</title>
+    <link rel="shortcut icon" href="camera.png" type="image/x-icon">
+    <link rel="stylesheet" href="select.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>What brings you to PicsHub?</h2>
+        <p>Select one that apply:</p>
+        <div class="options">
+            <div class="option" onclick="selectOption(this)">
+                <i class="fas fa-smile"></i>
+                <span>Fun</span>
+            </div>
+            <div class="option" onclick="selectOption(this)">
+                <i class="fas fa-hobby"></i>
+                <span>Hobby</span>
+            </div>
+            <div class="option" onclick="selectOption(this)">
+                <i class="fas fa-briefcase"></i>
+                <span>Own Business</span>
+            </div>
+            <div class="option" onclick="selectOption(this)">
+                <i class="fas fa-user-tie"></i>
+                <span>Full-Time Job</span>
+            </div>
+        </div>
+        <button class="next-btn" style="display: none;" onclick="window.location.href='welcome.html'">Next</button>
+
+    </div>
+
+    <script>
+        function selectOption(selectedOption) {
+            const options = document.querySelectorAll('.option');
+            options.forEach(option => option.classList.remove('selected')); // Remove selected class from all options
+            selectedOption.classList.add('selected'); // Add selected class to the clicked option
+            
+            // Show the Next button
+            const nextButton = document.querySelector('.next-btn');
+            nextButton.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
